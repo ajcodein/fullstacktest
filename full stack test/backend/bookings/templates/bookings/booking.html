@@ -1,0 +1,27 @@
+
+{% load static %}  <!-- Load static files -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Booking</title>
+    
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="booking-container">
+        <h2>Book an Appointment</h2>
+        <input type="date" id="booking-date" required>
+        <button onclick="fetchSlots()">Check Availability</button>
+        <div id="slots-container"></div>
+        <div id="booking-form" style="display:none;">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="tel" id="phone" placeholder="Phone" required>
+            <button onclick="bookSlot()">Book Now</button>
+        </div>
+        <p id="message"></p>
+    </div>
+
+    
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

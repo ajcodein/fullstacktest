@@ -1,0 +1,22 @@
+
+.booking-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+.slot {
+    margin: 5px;
+    padding: 10px;
+    background: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 95%;
+}
+
+.slot:hover { background: #e0e0e0; }
+input, button { margin: 5px; padding: 8px; width: 95%; }
+#message { color: green; margin-top: 10px; }
